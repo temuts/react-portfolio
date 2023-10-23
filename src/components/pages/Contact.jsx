@@ -2,14 +2,12 @@ import '../../App.css';
 import React, { useState } from 'react';
 
 export default function Contact() {
-  // State for form inputs
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     message: ''
   });
 
-  // State to hold the submitted data to display in the card
   const [submittedData, setSubmittedData] = useState(null);
 
   const handleChange = (e) => {

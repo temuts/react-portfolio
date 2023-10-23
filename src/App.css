@@ -40,10 +40,10 @@
     border-radius: 50%; 
     margin-bottom: 16px;
   }
-  /* Global styles */
+
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f6f8fa;
+    background-color: #000000;
     padding: 40px 0;
 }
 
@@ -53,7 +53,6 @@ h1 {
     margin-bottom: 40px;
 }
 
-/* Form styling */
 form {
     background-color: #fff;
     max-width: 500px;
@@ -108,7 +107,6 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Card styling */
 .dataCard {
     max-width: 500px;
     margin: 40px auto 0 auto;
@@ -122,3 +120,27 @@ h2 {
     margin-top: 0;
     color: #444;
 }
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+  .project-card {
+    width: 150px;
+    height: 225px;
+    background-size: cover;
+    background-position: center;
+    margin: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(50% - 20px);
+    filter: brightness(80%); 
+    transition: filter 0.3s ease;
+  }
+  .project-card:hover {
+    filter: brightness(100%); 
+  }
