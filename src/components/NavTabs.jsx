@@ -1,3 +1,5 @@
+import '../App.css'; 
+
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <ul className="nav nav-tabs">

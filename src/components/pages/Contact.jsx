@@ -25,8 +25,8 @@ export default function Contact() {
   };
 
   return (
-    <div>
-      <h1>Contact Me</h1>
+    <div className='contact-container'>
+      <h3 className='title'>Contact Me</h3>
       <form onSubmit={handleSubmit}>
         <div>
           <label>Name:</label>

@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .card {
     display: flex;
     justify-content: center;
@@ -9,42 +15,43 @@
     border-radius: 8px;
     padding: 16px;
     max-width: 500px;
-    margin: 20px auto;
+    margin: 40px auto 40px auto;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-  }
+}
 
-  .card ul {
+.card ul {
     display: flex;
     list-style-type: none; 
     padding: 15px; 
     justify-content: space-between; 
-  }
-  
-  .card ul li a {
+}
+
+.card ul li a {
     text-decoration: none; 
     color: #333; 
     padding: 8px 12px; 
     border: 1px solid #e0e0e0; 
     border-radius: 4px; 
     transition: background-color 0.3s; 
-  }
+}
   
-  .card ul li a:hover {
+.card ul li a:hover {
     background-color: #e0e0e0; 
-  }
+}
   
-  .profile-pic {
+.home-pic {
     width: 165px;
     height: 150px;
     border-radius: 50%; 
     margin-bottom: 16px;
-  }
+}
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: #000000;
-    padding: 40px 0;
+    padding: 0;
+    min-height: 100vh;
 }
 
 h1 {
@@ -73,8 +80,11 @@ label {
 }
 
 input[type="text"],
+
 input[type="email"],
+
 textarea,
+
 button {
     width: 100%;
     padding: 12px;
@@ -86,6 +96,7 @@ button {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+
 textarea:focus {
     border-color: #007bff;
 }
@@ -125,6 +136,7 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 15vh auto;
 }
   .project-card {
     width: 150px;
@@ -144,3 +156,91 @@ h2 {
   .project-card:hover {
     filter: brightness(100%); 
   }
+
+.nav {
+    background-color: black;
+    border-bottom: 2px solid #34495E; 
+    padding: 0.5rem 1rem;
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+
+}
+
+.nav-link {
+    color: #ECF0F1 !important; 
+    font-weight: 600; 
+    transition: color 0.3s ease; 
+    text-decoration: none; 
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: #c21aa9;
+    text-decoration: none; 
+}
+.nav .nav-item .nav-link.active {
+    color: #1912f3 !important;
+    font-weight: 700
+}
+
+.nav-link.active {
+    color: #F39C12; 
+    border-bottom: 3px solid #F39C12;
+}
+
+.project-title {
+    color: rgb(255, 0, 208) !important;
+    text-decoration: none !important;
+
+}
+
+.resume-body {
+    background-color: #000000;
+    margin: 50px;
+}
+.resume-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 25vh auto;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card-body {
+    color: white !important;
+    margin: 20px;
+}
+
+.download-btn {
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #2980b9;
+}
+
+.title {
+    color: rgb(204, 204, 204);
+    padding: 15px;
+    text-align: center;
+}
+
+.contact-container {
+    margin: 15vh auto;
+}
+

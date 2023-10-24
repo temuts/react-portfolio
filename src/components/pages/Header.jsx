@@ -2,10 +2,10 @@ import React from 'react';
 
 function Header() {
   const headerStyle = {
-    backgroundColor: '#282c34',
+    backgroundColor: 'black',
     color: 'white',
     textAlign: 'center',
-    padding: '1rem 0',
+    padding: '10px'
   };
 
   return (

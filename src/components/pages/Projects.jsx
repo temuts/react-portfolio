@@ -26,7 +26,7 @@ export default function Projects() {
       {projects.map((project, index) => (
         <div key={index} className="project-card" style={{ backgroundImage: `url(${projectImages[index]})` }}>
           <a href={project.link}>
-            <h1>{project.title}</h1>
+            <h1 className="project-title">{project.title}</h1>
           </a>
         </div>
       ))}
